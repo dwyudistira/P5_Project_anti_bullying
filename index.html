@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kampanye Anti-Bullying untuk menciptakan lingkungan aman dan suportif bagi semua orang.">
+    <title>Kampanye Anti-Bullying</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff5c5c, #ff9966);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: rgba(255, 92, 92, 0.9);
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        /* Marquee Section */
+        marquee {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1.25rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            margin: 0;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcccb;
+        }
+
+        /* Section Styles */
+        section {
+            margin: 2rem auto;
+            padding: 2.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #ff5c5c;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        /* Form Styling */
+        form label {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin: 0.75rem 0;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #ff5c5c;
+            box-shadow: 0 0 5px rgba(255, 92, 92, 0.5);
+        }
+
+        form button {
+            background: #ff5c5c;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            font-size: 1.1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #ff9966;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Carousel */
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 90%; /* Adjust the width of the carousel container to make it wider */
+            margin: 2rem auto;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel img {
+            width: 100%; /* Ensure images stretch to fill the container */
+            height: 500px; /* Set fixed height for the carousel images */
+            object-fit: cover; /* Ensure images fill the container without distortion */
+            flex-shrink: 0; /* Prevent images from shrinking */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-buttons button {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .carousel-buttons button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Katakan Tidak pada Bullying</h1>
+        <p>Bersama kita hentikan bullying!</p>
+    </header>
+
+    <marquee behavior="scroll" direction="left">Bergabunglah dengan kami dalam kampanye anti-bullying! Mari bersama ciptakan lingkungan yang lebih baik!</marquee>
+
+    <div class="carousel" id="carousel">
+        <img src="https://i.pinimg.com/474x/ec/12/a4/ec12a486055b541704a1d40c6adb9f37.jpg" alt="Bullying 1">
+        <img src="https://i.pinimg.com/474x/9e/f4/e7/9ef4e7b236c8aba2bfda4ac7e63e5612.jpg" alt="Bullying 2">
+        <img src="https://i.pinimg.com/474x/d9/65/03/d965035e3feccf3954ad1b303c5f188e.jpg" alt="Bullying 3">
+        <div class="carousel-buttons">
+            <button id="prevBtn">❮</button>
+            <button id="nextBtn">❯</button>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#testimonials">Cerita Korban</a></li>
+            <li><a href="#join">Gabung Kami</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>Tentang Kampanye Ini</h2>
+        <p>
+            Kampanye Anti-Bullying adalah gerakan yang didedikasikan untuk menciptakan lingkungan yang lebih aman dan suportif 
+            bagi semua orang, terutama anak-anak dan remaja yang rentan menjadi korban.
+        </p>
+    </section>
+
+    <section id="testimonials">
+        <h2>Cerita Korban</h2>
+        <article>
+            <h3>Anonim 1</h3>
+            <p>"Saya mengalami bullying sejak sekolah dasar. Teman-teman sering mengejek dan mengucilkan saya karena penampilan saya yang berbeda."</p>
+        </article>
+    </section>
+
+    <section id="join">
+        <h2>Gabung Bersama Kami</h2>
+        <form action="submit.html" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Gabung</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Kontak kami melalui email: <a href="mailto:antibullying@kampanye.com">antibullying@kampanye.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kampanye Anti-Bullying. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const carouselImages = document.querySelectorAll(".carousel img");
+        let currentIndex = 0;
+
+        function showImage(index) {
+            if (index >= carouselImages.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = carouselImages.length - 1;
+            }
+            const offset = -currentIndex * 100;
+            carouselImages.forEach((img) => {
+                img.style.transform = `translateX(${offset}%)`;
+            });
+        }
+
+        prevBtn.addEventListener("click", () => {
+            currentIndex--;
+            showImage(currentIndex);
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex++;
+            showImage(currentIndex);
+        });
+    </script>
+</body>
+</html>
